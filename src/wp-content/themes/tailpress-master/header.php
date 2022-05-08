@@ -67,12 +67,9 @@
 
 							<?php } ?>
 						</div>
-						<div class="slider">
-							<p id="description">
-								<?php echo get_bloginfo('description'); ?>
-							</p>
-						</div>
-
+						<p id="description">
+							<?php echo get_bloginfo('description'); ?>
+						</p>
 
 						<div class="lg:hidden">
 							<a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
