@@ -33,7 +33,7 @@
 										</a>
 
 									</div>
-									<nav>
+									<nav class="hidden lg:flex">
 										<div class="aboutUsLinks">
 											<a href="<?php echo get_bloginfo('url'); ?>" class="navLink">
 												About Us
@@ -58,7 +58,7 @@
 
 
 									</nav>
-									<a href="<?php echo get_bloginfo('url'); ?>" class="orangeBtn">
+									<a href="<?php echo get_bloginfo('url'); ?>" class="orangeBtn hidden lg:block">
 										Get in touch
 									</a>
 
