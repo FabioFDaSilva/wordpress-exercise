@@ -20,7 +20,7 @@
 
 		<header>
 			<div class="headerBG">
-				<div class="headerContainer">
+				<div class="navContainer">
 					<div>
 						<div id="navHeader">
 							<?php if (has_custom_logo()) { ?>
@@ -29,7 +29,7 @@
 								<div class="headerLinks">
 									<div>
 										<a href="<?php echo get_bloginfo('url'); ?>" id="homeLink">
-											<?php echo get_bloginfo('name'); ?>
+											<!--<?php echo get_bloginfo('name'); ?> --> Accountants & Co
 										</a>
 
 									</div>
@@ -67,9 +67,7 @@
 
 							<?php } ?>
 						</div>
-						<p id="description">
-							<?php echo get_bloginfo('description'); ?>
-						</p>
+
 
 						<div class="lg:hidden">
 							<a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
@@ -82,8 +80,9 @@
 								</svg>
 							</a>
 						</div>
-					</div>
 
+
+					</div>
 					<?php
 					wp_nav_menu(
 						array(
@@ -97,6 +96,36 @@
 					);
 					?>
 				</div>
+				<div class="slider">
+
+					<a href="<?php echo get_bloginfo('url'); ?>" id="previousRoundNavBtn" class="roundNavButton">
+						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M39.375 20C39.375 9.29687 30.7031 0.625 20 0.625C9.29688 0.625 0.625 9.29688 0.625 20C0.625 30.7031 9.29688 39.375 20 39.375C30.7031 39.375 39.375 30.7031 39.375 20ZM20 36.875C10.7266 36.875 3.125 29.3672 3.125 20C3.125 10.7266 10.6328 3.125 20 3.125C29.2734 3.125 36.875 10.6328 36.875 20C36.875 29.2734 29.3672 36.875 20 36.875ZM13.2344 19.3359L22.2266 10.3516C22.5938 9.98437 23.1875 9.98437 23.5547 10.3516L24.1094 10.9062C24.4766 11.2734 24.4766 11.8672 24.1094 12.2344L16.3281 20L24.1016 27.7734C24.4688 28.1406 24.4688 28.7344 24.1016 29.1016L23.5469 29.6562C23.1797 30.0234 22.5859 30.0234 22.2188 29.6562L13.2266 20.6719C12.8672 20.2969 12.8672 19.7031 13.2344 19.3359Z" fill="white" />
+						</svg>
+					</a>
+					<div id="description">
+						<p id="mainDescription">
+							<!-- <?php echo get_bloginfo('description'); ?> -->
+
+							We help our clients to understand, measure & improve their numbers		
+
+						</p>
+						<p class="subDescription">
+							We help our clients to understand, measure and improve their numbers. <br>
+							We do this based on our core values and we are UNIQUE...
+						</p>
+						<a href="<?php echo get_bloginfo('url'); ?>" class="largerOrangeBtn">
+							Get in touch
+						</a>
+					</div>
+
+					<a href="<?php echo get_bloginfo('url'); ?>" id="nextRoundNavBtn" class="roundNavButton">
+						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M39.375 20C39.375 9.29687 30.7031 0.625 20 0.625C9.29688 0.625 0.625 9.29688 0.625 20C0.625 30.7031 9.29688 39.375 20 39.375C30.7031 39.375 39.375 30.7031 39.375 20ZM20 36.875C10.7266 36.875 3.125 29.3672 3.125 20C3.125 10.7266 10.6328 3.125 20 3.125C29.2734 3.125 36.875 10.6328 36.875 20C36.875 29.2734 29.3672 36.875 20 36.875ZM13.2344 19.3359L22.2266 10.3516C22.5938 9.98437 23.1875 9.98437 23.5547 10.3516L24.1094 10.9062C24.4766 11.2734 24.4766 11.8672 24.1094 12.2344L16.3281 20L24.1016 27.7734C24.4688 28.1406 24.4688 28.7344 24.1016 29.1016L23.5469 29.6562C23.1797 30.0234 22.5859 30.0234 22.2188 29.6562L13.2266 20.6719C12.8672 20.2969 12.8672 19.7031 13.2344 19.3359Z" fill="white" />
+						</svg>
+					</a>
+				</div>
+
 			</div>
 
 		</header>

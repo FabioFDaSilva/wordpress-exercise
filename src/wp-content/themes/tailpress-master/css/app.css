@@ -12,7 +12,7 @@
   src: url(/wp-content/themes/tailpress-master/resources/css/fonts/Lexend-VariableFont_wght.ttf);
 }
 
-p ,h1,h2,h3 {
+p ,h1,h2,h3, div, a {
   font-family: lexend, sans-serif;
 }
 
@@ -21,9 +21,9 @@ p ,h1,h2,h3 {
   background-size: cover;
 }
 
-.headerContainer {
+.navContainer {
   display: flex;
-  width: 65%;
+  width: 64%;
   margin: auto;
 }
 
@@ -36,7 +36,7 @@ p ,h1,h2,h3 {
 }
 
 .navLink {
-  margin-left: 37px;
+  margin-left: 24px;
 }
 .orangeBtn {
   background: #FF8700;
@@ -44,13 +44,19 @@ p ,h1,h2,h3 {
   width: 161px;
   height: 2.7rem;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+}
+
+.largerOrangeBtn {
+  border-radius: 9999px;
+  background: #FF8700;
+  padding: 17px 58px;
+  color:white;
+  font-weight: 600;
 }
 nav {
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  margin-left: 173px;
+  margin-left: 172px;
   margin-right: 72px;
 }
 .aboutUsLinks {
@@ -60,19 +66,48 @@ nav {
   margin-left: 58px;
 }
 
+.slider {
+  display: inline-flex;
+  margin-top: 125px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.subDescription {
+  color: white;
+  margin: 14px 0 36px;
+}
+
+
+.roundNavButton{
+  padding: 0 26.81px;
+}
+
+#previousRoundNavBtn {
+
+}
+#nextRoundNavBtn {
+  transform: rotate(-180deg);
+  
+}
 
 #navHeader {
 }
 #description {
-  margin-top: 9rem;
-    font-weight: bold;
+  margin-left: 250px;
+  margin-right: 800px;
+  margin-bottom: 148px;
+}
+
+#mainDescription {
+  font-weight: bold;
     color: white;
     font-size: 42px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 #homeLink {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 36px;
 }
 *,
 ::before,
