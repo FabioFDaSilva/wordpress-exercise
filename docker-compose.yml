@@ -1,0 +1,16 @@
+services:
+  db:
+    image: mysql
+    environment:
+      - MYSQL_DATABASE=wordpress_db
+      - MYSQL_ROOT_PASSWORD=my-secret-pw
+    volumes:
+      - ./db:/var/lib/mysql
+  web:
+    image: wordpress
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 8888:80
+    depends_on:
+      - db
