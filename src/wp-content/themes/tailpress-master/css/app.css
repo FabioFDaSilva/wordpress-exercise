@@ -7,6 +7,73 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
+@font-face {
+  font-family: lexend;
+  src: url(/wp-content/themes/tailpress-master/resources/css/fonts/Lexend-VariableFont_wght.ttf);
+}
+
+p ,h1,h2,h3 {
+  font-family: lexend, sans-serif;
+}
+
+.headerBG {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(/wp-content/themes/tailpress-master/resources/images/hero-banner_desktop.jpg);
+  background-size: cover;
+}
+
+.headerContainer {
+  display: flex;
+  width: 65%;
+  margin: auto;
+}
+
+.headerLinks {
+  color:white;
+  padding-top: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.navLink {
+  margin-left: 37px;
+}
+.orangeBtn {
+  background: #FF8700;
+  border-radius: 9999px;
+  width: 161px;
+  height: 2.7rem;
+  text-align: center;
+  padding: 10px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-left: 173px;
+  margin-right: 72px;
+}
+.aboutUsLinks {
+}
+
+.interactionLinks {
+  margin-left: 58px;
+}
+
+
+#navHeader {
+}
+#description {
+  margin-top: 9rem;
+    font-weight: bold;
+    color: white;
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+#homeLink {
+  font-weight: 700;
+  font-size: 32px;
+}
 *,
 ::before,
 ::after {
