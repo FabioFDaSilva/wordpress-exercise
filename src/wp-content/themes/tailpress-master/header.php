@@ -29,7 +29,7 @@
 								<div class="headerLinks">
 									<div>
 										<a href="<?php echo get_bloginfo('url'); ?>" id="homeLink">
-											<!--<?php echo get_bloginfo('name'); ?> --> Accountants & Co
+											<?php echo get_bloginfo('name'); ?>
 										</a>
 
 									</div>
@@ -105,9 +105,7 @@
 					</a>
 					<div id="description">
 						<p id="mainDescription">
-							<!-- <?php echo get_bloginfo('description'); ?> -->
-
-							We help our clients to understand, measure & improve their numbers
+							<?php echo get_bloginfo('description'); ?> 
 
 						</p>
 						<p class="subDescription">
